@@ -1,4 +1,5 @@
-var todos = [];
+window.setTimeout(function(){
+    var todos = [];
 
 var input = prompt("What would you like to do?");
 
@@ -17,3 +18,5 @@ while(input !== "quit"){
     input = prompt("What would you like to do?");
 }
 console.log("See you again!");
+}, 500);
+
