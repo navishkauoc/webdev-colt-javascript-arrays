@@ -1,14 +1,15 @@
-window.setTimeout(function(){
-    var todos = [];
+var todos = [];
 
 var input = prompt("What would you like to do?");
 
 while(input !== "quit"){
     //Handle input
     if(input === "list"){
-        todos.forEach(function(todo){
-            console.log(todo);
+        console.log("**********")
+        todos.forEach(function(todo, i){
+            console.log(i + ": " + todo);
         });
+        console.log("**********")
     } else if(input === "new"){
         //Ask for new todo
         var newTodo = prompt("Enter new todo");
@@ -20,5 +21,4 @@ while(input !== "quit"){
     input = prompt("What would you like to do?");
 }
 console.log("See you again!");
-}, 500);
 
