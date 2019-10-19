@@ -30,3 +30,17 @@ function sumArray(mainArray){
 }
 
 sumArray([2, 4, 1]);
+
+function max(finArray){
+    var maxVal = 0;
+    var currVal = 0;
+    for(var i=0; i<=finArray.length-1; i++){
+        currVal = finArray[i];
+        if(currVal > maxVal){
+            maxVal = currVal;
+        }
+    }
+    console.log(maxVal);
+}
+
+max([4,7,89]);
