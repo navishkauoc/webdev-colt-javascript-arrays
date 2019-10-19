@@ -15,6 +15,11 @@ while(input !== "quit"){
         var newTodo = prompt("Enter new todo");
         //Add to todos array
         todos.push(newTodo);
+    } else if(input === "delete"){
+        //Ask for index of todo to be deleted
+        var index = prompt("Enter index of todo to delete");
+        //Delete that todo
+        todos.splice(index,1);
     }
 
     //Ask again for a new input
