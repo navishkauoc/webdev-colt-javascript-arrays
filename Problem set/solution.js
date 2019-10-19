@@ -7,3 +7,16 @@ function printReverse(oriArray){
 }
 
 printReverse([1, 2, 3]);
+
+function isUniform(testArray){
+    var firstElement = testArray[0];
+    for(var i=1; i<=testArray.length-1; i++){
+        if(firstElement === testArray[i]){
+            console.log(true);
+        } else{
+            console.log(false);
+        } 
+    }
+}
+
+isUniform([1, 1, 5]);
