@@ -6,7 +6,9 @@ var input = prompt("What would you like to do?");
 while(input !== "quit"){
     //Handle input
     if(input === "list"){
-        console.log(todos);
+        todos.forEach(function(todo){
+            console.log(todo);
+        });
     } else if(input === "new"){
         //Ask for new todo
         var newTodo = prompt("Enter new todo");
