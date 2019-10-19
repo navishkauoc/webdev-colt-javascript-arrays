@@ -20,3 +20,13 @@ function isUniform(testArray){
 }
 
 isUniform([1, 1, 5]);
+
+function sumArray(mainArray){
+    var sum = 0;
+    for(var i=0; i<=mainArray.length-1; i++){
+        sum += mainArray[i];
+    }
+    console.log(sum);
+}
+
+sumArray([2, 4, 1]);
